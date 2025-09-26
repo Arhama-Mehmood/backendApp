@@ -71,6 +71,9 @@ app.delete("/api/deleteusers/:id", async (req, res) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("Server is running!");
+});
 app.listen(3000, () => {
   console.log(chalk.red.bold("Server is running!"));
 });
